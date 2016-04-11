@@ -1,0 +1,7 @@
+[report]
+omit =
+    conftest.py
+    manage.py
+    */tests.py
+    */migrations/*
+show_missing = true

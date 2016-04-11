@@ -1,0 +1,10 @@
+server:
+    environment:
+      - CMD=django-admin runserver 0:80 
+    env_file:
+      - deploy/production.env
+
+    hostname: {{ project_name }}.test.gliacloud.com
+    ports:
+    - 80
+    scale: 1
